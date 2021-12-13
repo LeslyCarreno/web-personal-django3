@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-b.JPEG' %}{%endblock%}
+
+{% block headers %}
+   <h1>Acerca de</h1>
+   <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src= "{% static 'core/img/avatarb.JPEG' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Lesly Carreño</h2>   
+          <p>Nacida en portoviejo tengo 19 años de edad.</p>
+          <p>Mis estudios superiores actualmente son en la Universidad Tecnica de Manabi En la carrera de sistema
+          Mi objetivo es ser una profesional de exitos con valores eticos y morales.</p>
+        </div>
+      </div>  
+    </div>
+{% endblock %}
+
+
+    
